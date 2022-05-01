@@ -1,0 +1,70 @@
+$indentation: 0,
+5,
+10,
+15,
+20,
+25,
+30,
+35,
+40,
+45,
+50,
+55,
+60,
+65,
+70,
+75,
+80,
+85,
+90,
+95,
+100,
+105,
+110,
+115,
+120,
+125,
+130,
+135,
+140,
+145,
+150;
+
+@each $indent in $indentation {
+  .m-t-#{$indent} {
+    margin-top: #{$indent}px !important;
+  }
+  .m-r-#{$indent} {
+    margin-right: #{$indent}px !important;
+  }
+  .m-b-#{$indent} {
+    margin-bottom: #{$indent}px !important;
+  }
+  .m-l-#{$indent} {
+    margin-left: #{$indent}px !important;
+  }
+  .p-t-#{$indent} {
+    padding-top: #{$indent}px !important;
+  }
+  .p-r-#{$indent} {
+    padding-right: #{$indent}px !important;
+  }
+  .p-b-#{$indent} {
+    padding-bottom: #{$indent}px !important;
+  }
+  .p-l-#{$indent} {
+    padding-left: #{$indent}px !important;
+  }
+}
+
+@each $indent in $indentation {
+  .gap-#{$indent} {
+    gap: #{$indent}px;
+  }
+  .col-gap-#{$indent} {
+    column-gap: #{$indent}px;
+  }
+  .row-gap-#{$indent} {
+    row-gap: #{$indent}px;
+  }
+}
